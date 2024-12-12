@@ -1,0 +1,12 @@
+specVersion: "v1beta"
+serviceId: "spark-of-safety"
+location: "us-central1"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "fdcdb"
+      cloudSql:
+        instanceId: "spark-of-safety-fdc"
+      # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connector"]
